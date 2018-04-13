@@ -1,0 +1,30 @@
+{
+  "name": "Uninettuno Bot",
+  "version": "1.5.1",
+  "manifest_version": 2,
+  "description": "Guarda le videolezioni di Uninettuno più velocemente",
+  "icons": { "16": "logo.png", "32": "logo.png", "48": "logo.png", "128": "logo.png" },
+  "content_scripts":
+  [
+    {
+      "matches": ["https://www.uninettunouniversity.net/*", "http://www.uninettunouniversity.net/*"],
+      "js":  ["main.js"]
+    }
+  ],
+  "short_name": "UniBOT",
+  "author": "Federico Scardina",
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_title": "Uninettuno Bot",
+    "default_popup": "uninettunobot.html"
+  },
+
+  "background": {
+    "page": "uninettunobot.html"
+  },
+
+  "permissions": [
+    "*://www.uninettunouniversity.net/*",
+    "activeTab"
+  ]
+}

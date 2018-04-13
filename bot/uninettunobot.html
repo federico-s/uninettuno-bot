@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Uninettuno Bot</title>
+		<style>
+			html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+			}
+
+			body {
+				min-width: 150px;
+				overflow-x: hidden;
+				max-width: 350px;
+				padding: 7px 7px;
+				width: 250px;
+				padding: 10px;
+				background: rgb(174, 217, 237);
+			}
+
+			#bird-img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: inline;
+			}
+
+			#tears-img {
+				position: absolute;
+				top: 40px;
+				left: 32px;
+				display: inline;
+				z-index: 1;
+			}
+
+			#flattr-img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 5px;
+			}
+
+			#flattr-text {
+				margin-top: 5px;
+			}
+
+			.content {
+				background-color: #fff;
+				padding: 10px;
+				box-shadow: 0 0 1px #ddd;
+				font-size: 14px;
+				color: #737373;
+				border-radius: 3px;
+				height: 100%;
+				text-align: center;
+			}
+
+			.text {
+				font-size: 15px;
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				min-width: 130px;
+			}
+
+			.small-text {
+				font-size: 12px;
+			}
+
+			.text-align {
+				vertical-align: middle;
+				text-align: center;
+			}
+
+
+			.bold {
+				font-weight: bold;
+			}
+
+			.sinistra {
+		 	 	text-align: left;
+		    }
+
+			.destra {
+				text-align: right;
+			}
+
+			.sotto {
+				font-size: 10px;
+				font-style: italic;
+			}
+			.sotto-sopra {
+				font-size: 12px;
+			}
+			.sopra {
+				vertical-align: text-top;
+				font-size: 5px;
+			}
+			table {
+				width: 100%;
+			}
+			th, td {
+			    border-bottom: 1px solid #ddd;
+			}
+			td img {
+				cursor: pointer;
+			}
+		</style>
+		<script src="gestoreSalvataggio.js"></script>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="text text-align">Cronologia delle ultime lezioni guardate:</div>
+			<br>
+			<table id="lezioni-guardate"></table>
+			<hr>
+			<div id="controlli-velocita"></div>
+		</div>
+		<div id="flattr-text" class="text small-text text-align">Creato da F. S.</div>
+	</body>
+</html>
